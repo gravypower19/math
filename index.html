@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The History of Mathematics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        #intro {
+            background-color: #e0f7fa;
+        }
+
+        #ancient {
+            background-color: #fff9c4;
+        }
+
+        #middle-ages {
+            background-color: #d1c4e9;
+        }
+
+        #renaissance {
+            background-color: #c8e6c9;
+        }
+
+        #modern {
+            background-color: #ffccbc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>The History of Mathematics</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">Introduction</a></li>
+                    <li><a href="#ancient">Ancient Mathematics</a></li>
+                    <li><a href="#middle-ages">Middle Ages</a></li>
+                    <li><a href="#renaissance">Renaissance</a></li>
+                    <li><a href="#modern">Modern Mathematics</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro">
+            <div class="container">
+                <h2>Introduction</h2>
+                <p>Mathematics is a broad field of study that has evolved significantly over thousands of years. It began with basic counting and arithmetic, and over time, it expanded to include complex theories that form the foundation of science and technology.</p>
+            </div>
+        </section>
+
+        <section id="ancient">
+            <div class="container">
+                <h2>Ancient Mathematics</h2>
+                <p>The earliest records of mathematics come from ancient civilizations like the Egyptians, Babylonians, and Greeks. The Egyptians used mathematics for building, astronomy, and commerce, while the Babylonians made early advancements in geometry and algebra.</p>
+            </div>
+        </section>
+
+        <section id="middle-ages">
+            <div class="container">
+                <h2>Mathematics in the Middle Ages</h2>
+                <p>During the Middle Ages, Islamic mathematicians preserved and advanced knowledge from ancient civilizations. They translated Greek and Indian mathematical texts and introduced new concepts, such as the concept of zero and algebra.</p>
+            </div>
+        </section>
+
+        <section id="renaissance">
+            <div class="container">
+                <h2>The Renaissance and Early Modern Mathematics</h2>
+                <p>The Renaissance sparked a revival in mathematics, with figures like Fibonacci, Descartes, and Galileo making significant contributions to algebra, geometry, and calculus.</p>
+            </div>
+        </section>
+
+        <section id="modern">
+            <div class="container">
+                <h2>Modern Mathematics</h2>
+                <p>Modern mathematics includes numerous branches such as calculus, probability theory, and number theory. The work of mathematicians like Newton, Euler, and Gauss laid the groundwork for contemporary mathematics.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 The History of Mathematics. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
